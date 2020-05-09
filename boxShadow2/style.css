@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #022;
+  color: #eee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header {
+  padding: 1em 3em 1em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 350;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 0.7em;
+}
+
+header p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.split-right {
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  justify-items: center;
+}
+
+main a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  width: 300px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+main .box {
+  background-color: #000;
+  -webkit-box-shadow: 4px 4px 5px 8px #fff;
+          box-shadow: 4px 4px 5px 8px #fff;
+  margin-bottom: 2em;
+}
+
+main .box p {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .box:hover p {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .box2 {
+  border-radius: 5px;
+  background-color: #022;
+  -webkit-box-shadow: -3px -3px 6px 0px #fff, 3px 3px 6px #000;
+          box-shadow: -3px -3px 6px 0px #fff, 3px 3px 6px #000;
+}
+
+main .box2 p {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .box2:hover {
+  -webkit-box-shadow: inset -3px -3px 6px 0px #fff, inset 3px 3px 6px #000;
+          box-shadow: inset -3px -3px 6px 0px #fff, inset 3px 3px 6px #000;
+}
+
+main .box2:hover p {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer {
+  background-color: #00000070;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.2em;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    overflow-x: hidden;
+    width: 80%;
+    margin: 0em auto;
+  }
+  body header {
+    padding-top: 0em;
+  }
+  body main {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  body main .content-box {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main a {
+    margin-bottom: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

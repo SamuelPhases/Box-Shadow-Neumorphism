@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64ab2a0281.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./boxshadow.css" />
+    <title>Box Shadow</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./neu.html">Neumorphism Shadow</a></li>
+      </ul>
+    </nav>
+    <section class="box-container">
+      <div class="box"></div>
+      <div class="values">
+        <p>Box-Shadow:</p>
+        <div class="copy-shadow">
+          <div class="split-left">
+            <span class="x-position">3</span>px
+            <span class="y-position">3</span>px
+            <span class="spread-position">6</span>px
+            <span class="blur-position">6</span>px
+            <span class="shadow-value">#000000</span>;
+          </div>
+          <button class="split-right" title="Copy">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <label for="x-position">x</label>
+      <input
+        type="number"
+        name="x-position"
+        id="x-position"
+        value="3"
+        class="x-value"
+      />
+      <label for="y-position">y</label>
+      <input
+        type="number"
+        name="y-position"
+        id="y-position"
+        value="3"
+        class="y-value"
+      />
+      <label for="spread">spread</label>
+      <input
+        type="number"
+        name="spread"
+        id="spread"
+        value="6"
+        class="spread-value"
+      />
+
+      <label for="border-radius">border-radius</label>
+      <input type="number" name="border-radius" id="border-radius" value="10" />
+      <label for="blur">blur</label>
+      <input type="number" name="blur" id="blur" value="6" class="blur-value" />
+
+      <label for="shadow-color">Shadow color</label>
+      <input
+        type="color"
+        name="shadow-color"
+        id="shadow-color"
+        value="#000000"
+        class="color-value"
+      />
+
+      <div class="divider"></div>
+
+      <label for="box-color">box color</label>
+      <input type="color" name="box-color" id="box-color" value="#640640" />
+
+      <label for="background-color">background color</label>
+      <input
+        type="color"
+        name="background-color"
+        id="background-color"
+        value="#640640"
+      />
+    </aside>
+    <script src="./text.js"></script>
+    <script src="./main.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

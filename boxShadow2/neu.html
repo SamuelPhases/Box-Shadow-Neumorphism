@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64ab2a0281.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./neu.css" />
+    <title>Neumorphism</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./boxshadow.html">Box Shadow</a></li>
+      </ul>
+    </nav>
+    <section class="box-container">
+      <div class="box"></div>
+      <div class="values">
+        <p>Box-Shadow:</p>
+        <div class="copy-shadow">
+          <div class="split-left">
+            <span class="xValue">-5</span>px <span class="yValue">-5</span>px
+            <span class="spread-value">0</span>px
+            <span class="blur-value">5</span>px
+            <span class="first-shadow">#ffffff</span>,
+            <span class="txValue">5</span>px <span class="tyValue">5</span>px
+            <span class="tspreadValue">4</span>px
+            <span class="tblurValue">6</span>px
+            <span class="second-shadow">#000000</span>;
+          </div>
+          <button class="split-right" title="Copy">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+        <p>Box Color:</p>
+        <div class="copy-color">
+          <p class="boxColor">#012012</p>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <label for="x-position">x</label>
+      <input
+        type="number"
+        name="x-position"
+        id="x-position"
+        value="-5"
+        class="x-position"
+      />
+      <label for="tx-position">tx</label>
+      <input
+        type="number"
+        name="tx-position"
+        id="tx-position"
+        value="5"
+        class="tx-position"
+      />
+
+      <label for="border-radius">border-radius</label>
+      <input type="number" name="border-radius" id="border-radius" value="5" />
+
+      <label for="y-position">y</label>
+      <input
+        type="number"
+        name="y-position"
+        id="y-position"
+        value="-5"
+        class="y-position"
+      />
+      <label for="ty-position">ty</label>
+      <input
+        type="number"
+        name="ty-position"
+        id="ty-position"
+        value="5"
+        class="ty-position"
+      />
+
+      <label for="blur">blur</label>
+      <input type="number" name="blur" id="blur" value="5" class="blur" />
+      <label for="tblur">tblur</label>
+      <input type="number" name="tblur" id="tblur" value="6" class="tblur" />
+
+      <label for="spread">spread</label>
+      <input type="number" name="spread" id="spread" value="0" class="spread" />
+      <label for="tspread">tspread</label>
+      <input
+        type="number"
+        name="tspread"
+        id="tspread"
+        value="4"
+        class="tspread"
+      />
+
+      <label for="shadow-color">Shadow color</label>
+      <input
+        type="color"
+        name="shadow-color"
+        id="shadow-color"
+        value="#ffffff"
+        class="color-value"
+      />
+      <!-- <label for="shadow-color">TShadow color</label>
+      <input
+        type="color"
+        name="tshadow-color"
+        id="tshadow-color"
+        value="#000000"
+      /> -->
+
+      <div class="divider"></div>
+
+      <label for="box-color">box color</label>
+      <input
+        type="color"
+        name="box-color"
+        id="box-color"
+        value="#012012"
+        class="boxcolor"
+      />
+
+      <label for="background-color">background color</label>
+      <input
+        type="color"
+        name="background-color"
+        id="background-color"
+        value="#012012"
+      />
+    </aside>
+
+    <script src="./neu.js"></script>
+    <script src="./main.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
